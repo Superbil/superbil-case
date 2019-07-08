@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/superbil.co/static/css/main.b52b70fe.chunk.css",
+    "main.js": "/superbil.co/static/js/main.fb1d87fc.chunk.js",
+    "main.js.map": "/superbil.co/static/js/main.fb1d87fc.chunk.js.map",
+    "runtime~main.js": "/superbil.co/static/js/runtime~main.fb677617.js",
+    "runtime~main.js.map": "/superbil.co/static/js/runtime~main.fb677617.js.map",
+    "static/js/2.3310f33a.chunk.js": "/superbil.co/static/js/2.3310f33a.chunk.js",
+    "static/js/2.3310f33a.chunk.js.map": "/superbil.co/static/js/2.3310f33a.chunk.js.map",
+    "index.html": "/superbil.co/index.html",
+    "precache-manifest.d3f3217d0d802bcadbbd33d6f943cedc.js": "/superbil.co/precache-manifest.d3f3217d0d802bcadbbd33d6f943cedc.js",
+    "service-worker.js": "/superbil.co/service-worker.js",
+    "static/css/main.b52b70fe.chunk.css.map": "/superbil.co/static/css/main.b52b70fe.chunk.css.map"
+  }
+}
