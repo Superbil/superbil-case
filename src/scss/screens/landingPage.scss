@@ -1,0 +1,350 @@
+#landingPage {
+  .banner {
+    background-image: linear-gradient(to left, #245c7b, #11455c);
+    // padding: 0 130px;
+    display: flex;
+    justify-content: center;
+    padding-top: 170px;
+    .app_screenshoot {
+      img {
+        width: 30vw;
+      }
+    }
+    .banner_right {
+      .banner_slogan {
+        max-width: 515px;
+        margin-left: 100px;
+        img {
+          width: 375px;
+        }
+        h2 {
+          color: #fff;
+          font-size: 24px;
+          font-weight: normal;
+          margin-top: 36px;
+        }
+      }
+      .banner_enginner {
+        position: relative;
+        .dataline {
+          position: absolute;
+          top: 210px;
+          left: -50px;
+          img {
+            width: 280px;
+          }
+        }
+        .enginner {
+          position: absolute;
+          top: 35px;
+          left: 190px;
+          img {
+            width: 225px;
+          }
+        }
+      }
+    }
+  }
+
+  .landingPage_contents_block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px 0 100px;
+    .contents_title {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      h3 {
+        font-size: 18px;
+        font-weight: 600;
+        color: #000000;
+      }
+      h4 {
+        font-size: 16px;
+        font-weight: normal;
+        color: #000000;
+        margin: 16px 0 40px;
+      }
+    }
+
+    .contents {
+      width: 80vw;
+      display: flex;
+      flex-wrap: wrap;
+      .content {
+        max-width: 190px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 36px 75px;
+        &:first-child {
+          img {
+            margin-left: 27px;
+          }
+        }
+        h4 {
+          font-size: 16px;
+          font-weight: normal;
+          color: #000000;
+          margin: 35px 0 9px;
+        }
+        p {
+          font-size: 16px;
+          color: #000000;
+          text-align: justify;
+        }
+      }
+    }
+  }
+
+  .getManual_block {
+    width: 100vw;
+    height: 300px;
+    background-image: linear-gradient(to left, #245c7b, #11455c);
+    position: relative;
+    .getManual_bg_first {
+      width: 400px;
+      height: 320px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-image: url("../../images/landingPage/derec_CTA01.png");
+      background-repeat: no-repeat;
+      background-position: -10px -13px;
+    }
+    .getManual_bg_sec {
+      width: 300px;
+      height: 300px;
+      position: absolute;
+      top: 0;
+      left: 60px;
+      overflow: hidden;
+      .chart_circle_b {
+        position: relative;
+        &::before {
+          content: "";
+          width: 250px;
+          height: 250px;
+          border: 1px solid #fff;
+          border-radius: 50%;
+          position: absolute;
+          top: -40px;
+          left: 0px;
+        }
+        &::after {
+          content: "";
+          width: 220px;
+          height: 220px;
+          border: 1px solid #fff;
+          border-radius: 50%;
+          position: absolute;
+          top: -10px;
+          left: 0px;
+        }
+      }
+      .chart_circle {
+        position: relative;
+        &::before {
+          content: "";
+          width: 32px;
+          height: 32px;
+          border-radius: 50%;
+          position: absolute;
+          top: 135px;
+          right: 50px;
+          background-color: rgba(255, 255, 255, 0.2);
+        }
+        &::after {
+          content: "";
+          width: 19px;
+          height: 19px;
+          border-radius: 50%;
+          position: absolute;
+          top: 135px;
+          right: 15px;
+          background-color: rgba(255, 255, 255, 0.2);
+        }
+      }
+    }
+    .getManual_info {
+      position: absolute;
+      max-width: 770px;
+      height: 300px;
+      margin-left: 340px;
+      z-index: 100;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      h4 {
+        font-size: 18px;
+        font-weight: 600;
+        color: #ffffff;
+      }
+      p {
+        font-size: 16px;
+        color: #ffffff;
+        margin: 22px 0 18px;
+      }
+      .getManual_email {
+        width: 650px;
+        border-bottom: 1px solid #fff;
+        position: relative;
+        input {
+          border: none;
+          font-size: 16px;
+          color: #ffffff;
+          &::placeholder {
+            color: rgba(255, 255, 255, 0.7);
+          }
+          &:focus {
+            outline: none;
+          }
+        }
+        input[type="text"] {
+          width: 100%;
+          height: 60px;
+          background-color: transparent;
+          padding: 0 10px;
+        }
+        input[type="button"] {
+          width: 150px;
+          height: 60px;
+          position: absolute;
+          top: 1px;
+          right: 0;
+          background-color: #0f9ec7;
+          cursor: pointer;
+          &:hover {
+            background-color: #14baea;
+          }
+        }
+      }
+    }
+  }
+
+  .qa {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 0 0;
+    .qa_info {
+      width: 700px;
+      text-align: center;
+      h4 {
+        font-size: 18px;
+        font-weight: 600;
+        color: #000000;
+      }
+      p {
+        font-size: 16px;
+        color: #000000;
+        margin: 16px 0 34px;
+      }
+    }
+    .qa_table {
+      margin-bottom: 50px;
+      table {
+        width: 665px;
+        border-collapse: collapse;
+        tr {
+          height: 41px;
+          border-bottom: 1px solid #ddd;
+          td {
+            text-align: center;
+          }
+          th,
+          td {
+            &:first-child {
+              text-align: left;
+            }
+          }
+        }
+      }
+    }
+
+    .qa_evaluation {
+      width: 630px;
+      height: 250px;
+      box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.3);
+      background-color: #ffffff;
+      display: flex;
+      align-items: center;
+      padding: 25px 35px;
+      img {
+        width: 250px;
+      }
+      .qa_evaluation_info {
+        width: 300px;
+        margin-left: 40px;
+        h4 {
+          font-size: 18px;
+          font-weight: 500;
+          color: #000000;
+        }
+        p {
+          font-size: 16px;
+          color: #000000;
+          margin: 10px 0;
+        }
+      }
+    }
+  }
+
+  .person_block {
+    width: 100vw;
+    // height: 400px;
+    background-image: linear-gradient(to left, #245c7b, #11455c);
+    display: flex;
+    justify-content: center;
+    padding: 130px 0 80px;
+    margin-top: -70px;
+    img {
+      width: 110px;
+      height: 110px;
+    }
+    .person_info {
+      width: 480px;
+      display: flex;
+      flex-direction: column;
+      margin-left: 30px;
+      p {
+        font-size: 24px;
+        color: #ffffff;
+        margin: 15px 0;
+      }
+      .person_info_iosdev {
+        img {
+          width: 50px;
+          height: 20px;
+          margin-left: -5px;
+        }
+      }
+      .person_info_btn {
+        input[type="button"] {
+          font-size: 16px;
+          color: #fff;
+          background-color: transparent;
+          padding: 20px 25px;
+          margin-right: 10px;
+          cursor: pointer;
+          &:hover {
+            background-image: linear-gradient(
+              to left,
+              rgba(255, 255, 255, 0),
+              rgba(255, 255, 255, 0.2)
+            );
+          }
+
+          &:first-child {
+            border: none;
+            background-color: #0f9ec7;
+            &:hover {
+              background-color: #14baea;
+            }
+          }
+        }
+      }
+    }
+  }
+}
