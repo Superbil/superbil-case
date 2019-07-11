@@ -1,0 +1,17 @@
+@media all and (max-width: 760px) {
+  #header {
+    background-color: #0c384c;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px; }
+    #header .logo {
+      margin: 0; }
+      #header .logo img {
+        width: 30px; }
+    #header .menu ul li {
+      margin: 0 6px;
+      font-size: 14px; }
+      #header .menu ul li:last-child {
+        padding: 8px 10px; }
+    #header .chart_circle {
+      display: none; } }

@@ -1,10 +1,12 @@
 #landingPage {
   .banner {
-    background-image: linear-gradient(to left, #245c7b, #11455c);
-    // padding: 0 130px;
+    background-image: url("../../images//landingPage//bg.png");
+    background-size: 100vw;
+    background-repeat: no-repeat;
     display: flex;
     justify-content: center;
     padding-top: 170px;
+    margin-top: -100px;
     .app_screenshoot {
       img {
         width: 30vw;
@@ -27,12 +29,14 @@
       .banner_enginner {
         position: relative;
         .dataline {
+          width: 280px;
+          height: 180px;
           position: absolute;
           top: 210px;
           left: -50px;
-          img {
-            width: 280px;
-          }
+          background-image: url("../../images/landingPage/dataline_desktop.png");
+          background-size: 280px 180px;
+          background-repeat: no-repeat;
         }
         .enginner {
           position: absolute;
@@ -78,11 +82,6 @@
         flex-direction: column;
         align-items: center;
         margin: 36px 75px;
-        &:first-child {
-          img {
-            margin-left: 27px;
-          }
-        }
         h4 {
           font-size: 16px;
           font-weight: normal;
@@ -100,7 +99,6 @@
 
   .getManual_block {
     width: 100vw;
-    height: 300px;
     background-image: linear-gradient(to left, #245c7b, #11455c);
     position: relative;
     .getManual_bg_first {
@@ -110,6 +108,7 @@
       top: 0;
       left: 0;
       background-image: url("../../images/landingPage/derec_CTA01.png");
+      background-size: 100% 100%;
       background-repeat: no-repeat;
       background-position: -10px -13px;
     }
@@ -168,14 +167,14 @@
       }
     }
     .getManual_info {
-      position: absolute;
-      max-width: 770px;
-      height: 300px;
+      position: relative;
+      width: 56vw;
       margin-left: 340px;
       z-index: 100;
       display: flex;
       flex-direction: column;
-      justify-content: center;
+      padding: 60px 60px;
+
       h4 {
         font-size: 18px;
         font-weight: 600;
@@ -187,9 +186,7 @@
         margin: 22px 0 18px;
       }
       .getManual_email {
-        width: 650px;
-        border-bottom: 1px solid #fff;
-        position: relative;
+        width: 52vw;
         input {
           border: none;
           font-size: 16px;
@@ -202,17 +199,15 @@
           }
         }
         input[type="text"] {
-          width: 100%;
+          width: calc(52vw - 180px);
           height: 60px;
+          border-bottom: 1px solid #fff;
           background-color: transparent;
           padding: 0 10px;
         }
         input[type="button"] {
           width: 150px;
           height: 60px;
-          position: absolute;
-          top: 1px;
-          right: 0;
           background-color: #0f9ec7;
           cursor: pointer;
           &:hover {
@@ -242,7 +237,8 @@
         margin: 16px 0 34px;
       }
     }
-    .qa_table {
+    .qa_table,
+    .qa_table_rwd {
       margin-bottom: 50px;
       table {
         width: 665px;
@@ -261,6 +257,9 @@
           }
         }
       }
+    }
+    .qa_table_rwd {
+      display: none;
     }
 
     .qa_evaluation {

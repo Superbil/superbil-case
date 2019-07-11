@@ -1,11 +1,12 @@
 import React from "react";
 import "../../style/components/Header.css";
+import "../../style/components/Header_rwd.css";
 
 import logo from "../../images/logo/Logo.png";
 
 function Header() {
   return (
-    <div id="Header">
+    <div id="header">
       <div className="logo">
         <img src={logo} alt="superbill.co" />
       </div>

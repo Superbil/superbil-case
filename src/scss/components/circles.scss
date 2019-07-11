@@ -1,0 +1,68 @@
+#Circles {
+  margin: 100px;
+  .circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-image: linear-gradient(to left, #245c7b, #11455c);
+    animation: bubble 5s cubic-bezier(0.3, 0.6, 0.3, 1.1) infinite forwards;
+  }
+
+  @keyframes bubble {
+    0% {
+      border-radius: 50%;
+      transform: rotate(60deg);
+    }
+    25% {
+      border-radius: 20% 40% 20% 20%;
+    }
+    50% {
+      border-radius: 40% 3% 80% 10%;
+      transform: rotate(180deg);
+    }
+    75% {
+      border-radius: 90% 70% 20% 40%;
+    }
+
+    100% {
+      border-radius: 50%;
+      transform: rotate(360deg);
+    }
+  }
+}
+
+// #Circles {
+//   svg {
+//     margin: 0 auto;
+//     display: block;
+//   }
+//   svg .circle1 {
+//     // fill: #c00;
+//     transform: matrix(1, 0, 0, 1, 0, 0);
+//     animation: ghost1 10s cubic-bezier(0.3, 0.6, 0.3, 1.1) infinite forwards;
+//   }
+//   svg .cricle2 {
+//     // fill: #2d78f4;
+//     transform-origin: 50% 50%;
+//     animation: ghost2 12s cubic-bezier(0.3, 0.6, 0.3, 1.1) infinite forwards;
+//   }
+
+//   @keyframes ghost1 {
+//     0%,
+//     100% {
+//       transform: matrix(1, 0, 0, 1, 0, 0);
+//     }
+//     50% {
+//       transform: matrix(1, 0, 0, 1, 260, 0);
+//     }
+//   }
+//   @keyframes ghost2 {
+//     0%,
+//     100% {
+//       transform: matrix(1, 0, 0, 1, 0, 0);
+//     }
+//     50% {
+//       transform: matrix(1, 0, 0, 1, -260, 0);
+//     }
+//   }
+// }

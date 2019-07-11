@@ -1,7 +1,6 @@
-#Header {
+#header {
   display: flex;
   align-items: center;
-  background-image: linear-gradient(to left, #245c7b, #11455c);
   padding: 20px 0 0 90px;
   position: relative;
   .logo {
@@ -20,8 +19,8 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        cursor: pointer;
         position: relative;
+        cursor: pointer;
         &:hover {
           &::after {
             content: "";

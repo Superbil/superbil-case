@@ -1,8 +1,11 @@
 #landingPage .banner {
-  background-image: linear-gradient(to left, #245c7b, #11455c);
+  background-image: url("../../images//landingPage//bg.png");
+  background-size: 100vw;
+  background-repeat: no-repeat;
   display: flex;
   justify-content: center;
-  padding-top: 170px; }
+  padding-top: 170px;
+  margin-top: -100px; }
   #landingPage .banner .app_screenshoot img {
     width: 30vw; }
   #landingPage .banner .banner_right .banner_slogan {
@@ -18,11 +21,14 @@
   #landingPage .banner .banner_right .banner_enginner {
     position: relative; }
     #landingPage .banner .banner_right .banner_enginner .dataline {
+      width: 280px;
+      height: 180px;
       position: absolute;
       top: 210px;
-      left: -50px; }
-      #landingPage .banner .banner_right .banner_enginner .dataline img {
-        width: 280px; }
+      left: -50px;
+      background-image: url("../../images/landingPage/dataline_desktop.png");
+      background-size: 280px 180px;
+      background-repeat: no-repeat; }
     #landingPage .banner .banner_right .banner_enginner .enginner {
       position: absolute;
       top: 35px;
@@ -58,8 +64,6 @@
       flex-direction: column;
       align-items: center;
       margin: 36px 75px; }
-      #landingPage .landingPage_contents_block .contents .content:first-child img {
-        margin-left: 27px; }
       #landingPage .landingPage_contents_block .contents .content h4 {
         font-size: 16px;
         font-weight: normal;
@@ -72,7 +76,6 @@
 
 #landingPage .getManual_block {
   width: 100vw;
-  height: 300px;
   background-image: linear-gradient(to left, #245c7b, #11455c);
   position: relative; }
   #landingPage .getManual_block .getManual_bg_first {
@@ -82,6 +85,7 @@
     top: 0;
     left: 0;
     background-image: url("../../images/landingPage/derec_CTA01.png");
+    background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: -10px -13px; }
   #landingPage .getManual_block .getManual_bg_sec {
@@ -132,14 +136,13 @@
         right: 15px;
         background-color: rgba(255, 255, 255, 0.2); }
   #landingPage .getManual_block .getManual_info {
-    position: absolute;
-    max-width: 770px;
-    height: 300px;
+    position: relative;
+    width: 56vw;
     margin-left: 340px;
     z-index: 100;
     display: flex;
     flex-direction: column;
-    justify-content: center; }
+    padding: 60px 60px; }
     #landingPage .getManual_block .getManual_info h4 {
       font-size: 18px;
       font-weight: 600;
@@ -149,9 +152,7 @@
       color: #ffffff;
       margin: 22px 0 18px; }
     #landingPage .getManual_block .getManual_info .getManual_email {
-      width: 650px;
-      border-bottom: 1px solid #fff;
-      position: relative; }
+      width: 52vw; }
       #landingPage .getManual_block .getManual_info .getManual_email input {
         border: none;
         font-size: 16px;
@@ -161,16 +162,14 @@
         #landingPage .getManual_block .getManual_info .getManual_email input:focus {
           outline: none; }
       #landingPage .getManual_block .getManual_info .getManual_email input[type="text"] {
-        width: 100%;
+        width: calc(52vw - 180px);
         height: 60px;
+        border-bottom: 1px solid #fff;
         background-color: transparent;
         padding: 0 10px; }
       #landingPage .getManual_block .getManual_info .getManual_email input[type="button"] {
         width: 150px;
         height: 60px;
-        position: absolute;
-        top: 1px;
-        right: 0;
         background-color: #0f9ec7;
         cursor: pointer; }
         #landingPage .getManual_block .getManual_info .getManual_email input[type="button"]:hover {
@@ -192,19 +191,27 @@
       font-size: 16px;
       color: #000000;
       margin: 16px 0 34px; }
-  #landingPage .qa .qa_table {
+  #landingPage .qa .qa_table,
+  #landingPage .qa .qa_table_rwd {
     margin-bottom: 50px; }
-    #landingPage .qa .qa_table table {
+    #landingPage .qa .qa_table table,
+    #landingPage .qa .qa_table_rwd table {
       width: 665px;
       border-collapse: collapse; }
-      #landingPage .qa .qa_table table tr {
+      #landingPage .qa .qa_table table tr,
+      #landingPage .qa .qa_table_rwd table tr {
         height: 41px;
         border-bottom: 1px solid #ddd; }
-        #landingPage .qa .qa_table table tr td {
+        #landingPage .qa .qa_table table tr td,
+        #landingPage .qa .qa_table_rwd table tr td {
           text-align: center; }
         #landingPage .qa .qa_table table tr th:first-child,
-        #landingPage .qa .qa_table table tr td:first-child {
+        #landingPage .qa .qa_table table tr td:first-child,
+        #landingPage .qa .qa_table_rwd table tr th:first-child,
+        #landingPage .qa .qa_table_rwd table tr td:first-child {
           text-align: left; }
+  #landingPage .qa .qa_table_rwd {
+    display: none; }
   #landingPage .qa .qa_evaluation {
     width: 630px;
     height: 250px;
