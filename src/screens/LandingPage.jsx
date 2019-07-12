@@ -1,4 +1,5 @@
 import React from "react";
+import { Link, scroller } from "react-scroll";
 import "../style/screens/landingPage.css";
 import "../style/screens/landingPage_rwd.css";
 //components
@@ -7,7 +8,6 @@ import Header from "../components/header/Header.jsx";
 // imgs
 import app from "../images/landingPage/App.png";
 import enginner from "../images/landingPage/enginner.png";
-import dataline from "../images/landingPage/dataline_desktop.png";
 import customerService from "../images/landingPage/customerService.png";
 import superbilHead from "../images/landingPage/superbilHead.png";
 import font_slogan from "../images/font/font_slogan.svg";
@@ -18,9 +18,15 @@ import font_dev from "../images/font/font_Dev.svg";
 import landingPage_contents_data from "../data/landingPage_contents_data";
 
 function LandingPage() {
+  function scroll(element) {
+    scroller.scrollTo(element, {
+      duration: 500,
+      smooth: true
+    });
+  }
   return (
     <div id="landingPage">
-      <Header />
+      <Header scrollCallback={scroll} />
 
       <div className="banner">
         <div className="app_screenshoot">
@@ -45,7 +51,7 @@ function LandingPage() {
         </div>
       </div>
 
-      <div className="landingPage_contents_block">
+      <div className="landingPage_contents_block" name="serviceItems">
         <div className="contents_title">
           <h3>{landingPage_contents_data.serviceItem.title}</h3>
           <h4>{landingPage_contents_data.serviceItem.info}</h4>
@@ -79,7 +85,7 @@ function LandingPage() {
         <div className="getManual_bg_first" />
       </div>
 
-      <div className="landingPage_contents_block">
+      <div className="landingPage_contents_block" name="coopProcess">
         <div className="contents_title">
           <h3>{landingPage_contents_data.copProcess.title}</h3>
           <h4>{landingPage_contents_data.copProcess.info}</h4>
@@ -118,7 +124,7 @@ function LandingPage() {
         </div>
       </div>
 
-      <div className="qa">
+      <div className="qa" name="nativeDev">
         <div className="qa_info">
           <h4>混合開發是什麼？原生開發是什麼？</h4>
           <p>

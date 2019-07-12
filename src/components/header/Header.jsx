@@ -1,10 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
+import * as Scroll from "react-scroll";
+import {
+  Link,
+  Element,
+  Events,
+  animateScroll as scroll,
+  scrollSpy,
+  scroller
+} from "react-scroll";
 import "../../style/components/Header.css";
 import "../../style/components/Header_rwd.css";
 
 import logo from "../../images/logo/Logo.png";
 
-function Header() {
+const Header = ({ scrollCallback }) => {
+  // const [element, setElement] = useState();
   return (
     <div id="header">
       <div className="logo">
@@ -12,9 +22,9 @@ function Header() {
       </div>
       <div className="menu">
         <ul>
-          <li>服務項目</li>
-          <li>合作流程</li>
-          <li>原生開發？</li>
+          <li onClick={() => scrollCallback("serviceItems")}>服務項目</li>
+          <li onClick={() => scrollCallback("coopProcess")}>合作流程</li>
+          <li onClick={() => scrollCallback("nativeDev")}>原生開發？</li>
           <li>聯絡我們</li>
         </ul>
       </div>
@@ -25,6 +35,6 @@ function Header() {
       </div>
     </div>
   );
-}
+};
 
 export default Header;
