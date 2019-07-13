@@ -1,31 +1,34 @@
 import React, { useState } from "react";
-import * as Scroll from "react-scroll";
-import {
-  Link,
-  Element,
-  Events,
-  animateScroll as scroll,
-  scrollSpy,
-  scroller
-} from "react-scroll";
 import "../../style/components/Header.css";
 import "../../style/components/Header_rwd.css";
 
 import logo from "../../images/logo/Logo.png";
+import icn_ham from "../../images/icon/icn_ham.svg";
 
-const Header = ({ scrollCallback }) => {
-  // const [element, setElement] = useState();
+const Header = ({ scrollCallback, rwd_header_status }) => {
+  const [menu_status, setmenu_status] = useState(false);
   return (
-    <div id="header">
-      <div className="logo">
+    <div id={rwd_header_status ? "header_ham" : "header"}>
+      <div className="logo" onClick={() => scrollCallback("top")}>
         <img src={logo} alt="superbill.co" />
       </div>
-      <div className="menu">
+      <div className="icn_ham" onClick={() => setmenu_status(!menu_status)}>
+        <img src={icn_ham} alt="menu" />
+      </div>
+      <div className={menu_status ? "menu menu-open" : "menu"}>
         <ul>
-          <li onClick={() => scrollCallback("serviceItems")}>服務項目</li>
-          <li onClick={() => scrollCallback("coopProcess")}>合作流程</li>
-          <li onClick={() => scrollCallback("nativeDev")}>原生開發？</li>
-          <li>聯絡我們</li>
+          <li onClick={() => scrollCallback("serviceItems")}>
+            <span>服務項目</span>
+          </li>
+          <li onClick={() => scrollCallback("coopProcess")}>
+            <span>合作流程</span>
+          </li>
+          <li onClick={() => scrollCallback("nativeDev")}>
+            <span>原生開發？</span>
+          </li>
+          <li>
+            <span>聯絡我們</span>
+          </li>
         </ul>
       </div>
 

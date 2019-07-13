@@ -1,15 +1,23 @@
-#header {
+#header,
+#header_ham {
   display: flex;
   align-items: center;
   padding: 20px 0 0 90px;
   position: relative; }
-  #header .logo {
+  #header .logo,
+  #header_ham .logo {
     margin: 0 40px; }
-    #header .logo img {
+    #header .logo img,
+    #header_ham .logo img {
       width: 60px; }
-  #header .menu ul {
+  #header .icn_ham,
+  #header_ham .icn_ham {
+    display: none; }
+  #header .menu ul,
+  #header_ham .menu ul {
     display: flex; }
-    #header .menu ul li {
+    #header .menu ul li,
+    #header_ham .menu ul li {
       font-size: 16px;
       color: #ffffff;
       margin: 0 20px;
@@ -18,32 +26,31 @@
       align-items: center;
       position: relative;
       cursor: pointer; }
-      #header .menu ul li:hover::after {
-        content: "";
-        position: absolute;
-        left: 0;
-        bottom: 7px;
-        width: 100%;
-        height: 1px;
-        background-color: #fff; }
-      #header .menu ul li:last-child {
+      #header .menu ul li:hover span,
+      #header_ham .menu ul li:hover span {
+        padding: 5px 0;
+        border-bottom: 1px solid #fff; }
+      #header .menu ul li:last-child span,
+      #header_ham .menu ul li:last-child span {
+        border: 1px solid #ffffff;
         padding: 11px 18px;
-        border-radius: 2px;
-        border: 1px solid #ffffff; }
-        #header .menu ul li:last-child:hover {
+        border-radius: 2px; }
+        #header .menu ul li:last-child span:hover,
+        #header_ham .menu ul li:last-child span:hover {
           background-image: linear-gradient(to left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.2)); }
-          #header .menu ul li:last-child:hover::after {
-            display: none; }
-  #header .chart_circle {
+  #header .chart_circle,
+  #header_ham .chart_circle {
     width: 165px;
     height: 200px;
     position: absolute;
     top: 0;
     right: 0;
     overflow: hidden; }
-    #header .chart_circle .chart_circle_b {
+    #header .chart_circle .chart_circle_b,
+    #header_ham .chart_circle .chart_circle_b {
       position: relative; }
-      #header .chart_circle .chart_circle_b::before {
+      #header .chart_circle .chart_circle_b::before,
+      #header_ham .chart_circle .chart_circle_b::before {
         content: "";
         width: 250px;
         height: 250px;
@@ -52,7 +59,8 @@
         position: absolute;
         top: -130px;
         right: -136px; }
-      #header .chart_circle .chart_circle_b::after {
+      #header .chart_circle .chart_circle_b::after,
+      #header_ham .chart_circle .chart_circle_b::after {
         content: "";
         width: 320px;
         height: 320px;
@@ -61,9 +69,11 @@
         position: absolute;
         top: -170px;
         right: -160px; }
-    #header .chart_circle .chart_circle {
+    #header .chart_circle .chart_circle,
+    #header_ham .chart_circle .chart_circle {
       position: relative; }
-      #header .chart_circle .chart_circle::before {
+      #header .chart_circle .chart_circle::before,
+      #header_ham .chart_circle .chart_circle::before {
         content: "";
         width: 32px;
         height: 32px;
@@ -72,7 +82,8 @@
         top: 135px;
         right: 20px;
         background-color: rgba(255, 255, 255, 0.2); }
-      #header .chart_circle .chart_circle::after {
+      #header .chart_circle .chart_circle::after,
+      #header_ham .chart_circle .chart_circle::after {
         content: "";
         width: 19px;
         height: 19px;

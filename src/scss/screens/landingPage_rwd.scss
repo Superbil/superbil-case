@@ -2,7 +2,7 @@
   #landingPage {
     .banner {
       padding: 0 25px;
-      margin: 0;
+      margin: -1px 0 0;
       background-image: none;
       flex-direction: column-reverse;
       align-items: center;
@@ -19,6 +19,7 @@
         padding-bottom: 150px;
         .banner_slogan {
           margin: 0;
+          padding-top: 10px;
           display: flex;
           flex-direction: column;
           align-items: center;
@@ -56,7 +57,7 @@
     }
 
     .landingPage_contents_block {
-      padding: 0 30px;
+      padding: 70px 30px;
       .contents_title {
         h4 {
           text-align: justify;
@@ -107,6 +108,7 @@
     }
 
     .qa {
+      padding-top: 70px;
       .qa_info {
         width: 80vw;
         p {

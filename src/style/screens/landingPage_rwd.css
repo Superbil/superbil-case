@@ -1,7 +1,7 @@
 @media all and (max-width: 760px) {
   #landingPage .banner {
     padding: 0 25px;
-    margin: 0;
+    margin: -1px 0 0;
     background-image: none;
     flex-direction: column-reverse;
     align-items: center; }
@@ -16,6 +16,7 @@
       padding-bottom: 150px; }
       #landingPage .banner .banner_right .banner_slogan {
         margin: 0;
+        padding-top: 10px;
         display: flex;
         flex-direction: column;
         align-items: center; }
@@ -43,7 +44,7 @@
           #landingPage .banner .banner_right .banner_enginner .enginner img {
             width: 55vw; }
   #landingPage .landingPage_contents_block {
-    padding: 0 30px; }
+    padding: 70px 30px; }
     #landingPage .landingPage_contents_block .contents_title h4 {
       text-align: justify;
       margin-bottom: 4px; }
@@ -74,28 +75,30 @@
     #landingPage .getManual_block .getManual_bg_first,
     #landingPage .getManual_block .getManual_bg_sec {
       display: none; }
-  #landingPage .qa .qa_info {
-    width: 80vw; }
-    #landingPage .qa .qa_info p {
-      text-align: justify; }
-      #landingPage .qa .qa_info p br {
-        display: none; }
-  #landingPage .qa .qa_table {
-    display: none; }
-  #landingPage .qa .qa_table_rwd table {
-    width: 80vw;
-    margin-top: 25px; }
-  #landingPage .qa .qa_evaluation {
-    width: 80vw;
-    height: auto;
-    flex-direction: column;
-    padding: 25px; }
-    #landingPage .qa .qa_evaluation img {
-      width: 220px; }
-    #landingPage .qa .qa_evaluation .qa_evaluation_info {
-      margin: 25px 0; }
-      #landingPage .qa .qa_evaluation .qa_evaluation_info p {
+  #landingPage .qa {
+    padding-top: 70px; }
+    #landingPage .qa .qa_info {
+      width: 80vw; }
+      #landingPage .qa .qa_info p {
         text-align: justify; }
+        #landingPage .qa .qa_info p br {
+          display: none; }
+    #landingPage .qa .qa_table {
+      display: none; }
+    #landingPage .qa .qa_table_rwd table {
+      width: 80vw;
+      margin-top: 25px; }
+    #landingPage .qa .qa_evaluation {
+      width: 80vw;
+      height: auto;
+      flex-direction: column;
+      padding: 25px; }
+      #landingPage .qa .qa_evaluation img {
+        width: 220px; }
+      #landingPage .qa .qa_evaluation .qa_evaluation_info {
+        margin: 25px 0; }
+        #landingPage .qa .qa_evaluation .qa_evaluation_info p {
+          text-align: justify; }
   #landingPage .person_block {
     flex-direction: column;
     align-items: center; }
