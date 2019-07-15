@@ -2,7 +2,7 @@
   "name": "superbil.co",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://testBlog.hidana.me",
+  "homepage": "https://superbilBlog.hidana.me",
   "dependencies": {
     "react": "^16.8.6",
     "react-dom": "^16.8.6",

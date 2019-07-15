@@ -24,7 +24,7 @@
           flex-direction: column;
           align-items: center;
           h2 {
-            width: 270px;
+            max-width: 72vw;
             text-align: justify;
             font-size: 16px;
             font-weight: normal;
@@ -110,7 +110,7 @@
     .qa {
       padding-top: 70px;
       .qa_info {
-        width: 80vw;
+        width: 81vw;
         p {
           text-align: justify;
           br {
@@ -137,6 +137,7 @@
           width: 220px;
         }
         .qa_evaluation_info {
+          width: 78vw;
           margin: 25px 0;
           p {
             text-align: justify;

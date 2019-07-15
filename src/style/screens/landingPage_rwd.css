@@ -21,7 +21,7 @@
         flex-direction: column;
         align-items: center; }
         #landingPage .banner .banner_right .banner_slogan h2 {
-          width: 270px;
+          max-width: 72vw;
           text-align: justify;
           font-size: 16px;
           font-weight: normal; }
@@ -78,7 +78,7 @@
   #landingPage .qa {
     padding-top: 70px; }
     #landingPage .qa .qa_info {
-      width: 80vw; }
+      width: 81vw; }
       #landingPage .qa .qa_info p {
         text-align: justify; }
         #landingPage .qa .qa_info p br {
@@ -96,6 +96,7 @@
       #landingPage .qa .qa_evaluation img {
         width: 220px; }
       #landingPage .qa .qa_evaluation .qa_evaluation_info {
+        width: 78vw;
         margin: 25px 0; }
         #landingPage .qa .qa_evaluation .qa_evaluation_info p {
           text-align: justify; }

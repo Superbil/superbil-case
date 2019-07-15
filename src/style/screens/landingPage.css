@@ -9,32 +9,32 @@
   #landingPage .banner .app_screenshoot img {
     width: 30vw; }
   #landingPage .banner .banner_right .banner_slogan {
-    max-width: 515px;
-    margin-left: 100px; }
+    margin-left: 7.8vw; }
     #landingPage .banner .banner_right .banner_slogan img {
-      width: 375px; }
+      width: 30vw; }
     #landingPage .banner .banner_right .banner_slogan h2 {
+      max-width: 41.5vw;
       color: #fff;
-      font-size: 24px;
+      font-size: 1.9vw;
       font-weight: normal;
       margin-top: 36px; }
   #landingPage .banner .banner_right .banner_enginner {
     position: relative; }
     #landingPage .banner .banner_right .banner_enginner .dataline {
-      width: 280px;
-      height: 180px;
+      width: 22vw;
+      height: 16vw;
       position: absolute;
-      top: 210px;
-      left: -50px;
+      top: 16.5vw;
+      left: -4vw;
       background-image: url("../../images/landingPage/dataline_desktop.png");
-      background-size: 280px 180px;
+      background-size: 100%;
       background-repeat: no-repeat; }
     #landingPage .banner .banner_right .banner_enginner .enginner {
       position: absolute;
-      top: 35px;
-      left: 190px; }
+      top: 2.75vw;
+      left: 15vw; }
       #landingPage .banner .banner_right .banner_enginner .enginner img {
-        width: 225px; }
+        width: 17.7vw; }
 
 #landingPage .landingPage_contents_block {
   display: flex;
@@ -57,7 +57,8 @@
   #landingPage .landingPage_contents_block .contents {
     width: 80vw;
     display: flex;
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    justify-content: center; }
     #landingPage .landingPage_contents_block .contents .content {
       max-width: 190px;
       display: flex;
@@ -79,8 +80,8 @@
   background-image: linear-gradient(to left, #245c7b, #11455c);
   position: relative; }
   #landingPage .getManual_block .getManual_bg_first {
-    width: 400px;
-    height: 320px;
+    width: 50vw;
+    height: 110%;
     position: absolute;
     top: 0;
     left: 0;
@@ -138,7 +139,7 @@
   #landingPage .getManual_block .getManual_info {
     position: relative;
     width: 56vw;
-    margin-left: 340px;
+    margin-left: 27vw;
     z-index: 100;
     display: flex;
     flex-direction: column;

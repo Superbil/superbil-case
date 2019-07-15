@@ -14,14 +14,15 @@
     }
     .banner_right {
       .banner_slogan {
-        max-width: 515px;
-        margin-left: 100px;
+        margin-left: 7.8vw;
         img {
-          width: 375px;
+          width: 30vw;
         }
         h2 {
+          max-width: 41.5vw;
           color: #fff;
-          font-size: 24px;
+          // font-size: 24px;
+          font-size: 1.9vw;
           font-weight: normal;
           margin-top: 36px;
         }
@@ -29,21 +30,21 @@
       .banner_enginner {
         position: relative;
         .dataline {
-          width: 280px;
-          height: 180px;
+          width: 22vw;
+          height: 16vw;
           position: absolute;
-          top: 210px;
-          left: -50px;
+          top: 16.5vw;
+          left: -4vw;
           background-image: url("../../images/landingPage/dataline_desktop.png");
-          background-size: 280px 180px;
+          background-size: 100%;
           background-repeat: no-repeat;
         }
         .enginner {
           position: absolute;
-          top: 35px;
-          left: 190px;
+          top: 2.75vw;
+          left: 15vw;
           img {
-            width: 225px;
+            width: 17.7vw;
           }
         }
       }
@@ -76,6 +77,7 @@
       width: 80vw;
       display: flex;
       flex-wrap: wrap;
+      justify-content: center;
       .content {
         max-width: 190px;
         display: flex;
@@ -102,8 +104,8 @@
     background-image: linear-gradient(to left, #245c7b, #11455c);
     position: relative;
     .getManual_bg_first {
-      width: 400px;
-      height: 320px;
+      width: 50vw;
+      height: 110%;
       position: absolute;
       top: 0;
       left: 0;
@@ -169,7 +171,7 @@
     .getManual_info {
       position: relative;
       width: 56vw;
-      margin-left: 340px;
+      margin-left: 27vw;
       z-index: 100;
       display: flex;
       flex-direction: column;
