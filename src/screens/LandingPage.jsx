@@ -21,8 +21,8 @@ import landingPage_contents_data from "../data/landingPage_contents_data";
 export default class LandingPage extends Component {
   constructor(props) {
     super(props);
-
     this.state = {
+      loaded: false,
       rwd_header_status: false
     };
   }
@@ -30,6 +30,7 @@ export default class LandingPage extends Component {
   componentDidMount = () => {
     // hadling cover parallax
     window.addEventListener("scroll", this.handleOnScroll);
+    this.setState({ loaded: true });
   };
 
   componentWillUnmount = () => {
@@ -51,8 +52,9 @@ export default class LandingPage extends Component {
   }
 
   render() {
-    const { rwd_header_status } = this.state;
+    const { loaded, rwd_header_status } = this.state;
 
+    if (!loaded) return <div>loading...</div>;
     return (
       <div id="landingPage" name="top">
         <Header
