@@ -67,12 +67,9 @@
           position: absolute;
           top: 16.5vw;
           left: -4vw;
-          img {
-            width: 100%;
-          }
-          .dataline_m_img {
-            display: none;
-          }
+          background-image: url("../../images/landingPage/dataline_desktop.png");
+          background-size: 100%;
+          background-repeat: no-repeat;
         }
         .enginner {
           position: absolute;

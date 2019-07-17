@@ -9,8 +9,6 @@ import Header from "../components/header/Header.jsx";
 import app_bg from "../images/landingPage/app_bg.svg";
 import app_map from "../images/landingPage/app_map.svg";
 import enginner from "../images/landingPage/enginner.svg";
-import dataline from "../images/landingPage/dataline_desktop.png";
-import dataline_m from "../images/landingPage/dataline_mobile.png";
 import customerService from "../images/landingPage/customerService.svg";
 import superbilHead from "../images/landingPage/superbilHead.svg";
 import font_slogan from "../images/font/font_slogan.svg";
@@ -24,12 +22,12 @@ export default class LandingPage extends Component {
   constructor(props) {
     super(props);
     this.state = {
+      loaded: false,
       rwd_header_status: false
     };
   }
 
   componentDidMount = () => {
-    // hadling cover parallax
     window.addEventListener("scroll", this.handleOnScroll);
   };
 
@@ -81,14 +79,7 @@ export default class LandingPage extends Component {
             </div>
 
             <div className="banner_enginner">
-              <div className="dataline">
-                <img src={dataline} alt="dataline" className="dataline_img" />
-                <img
-                  src={dataline_m}
-                  alt="dataline"
-                  className="dataline_m_img"
-                />
-              </div>
+              <div className="dataline" />
               <div className="enginner">
                 <img src={enginner} alt="superbill" />
               </div>
