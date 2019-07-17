@@ -35,7 +35,6 @@ export default class LandingPage extends Component {
     window.removeEventListener("scroll", this.handleOnScroll);
   };
 
-  // handle onScroll event
   handleOnScroll = () => {
     const wScroll = window.scrollY;
     wScroll > 50
@@ -274,7 +273,7 @@ export default class LandingPage extends Component {
           </div>
         </div>
 
-        <div className="person_block">
+        <div className="person_block" name="contactUs">
           <img src={superbilHead} alt="superbill" />
           <div className="person_info">
             <div className="person_info_iosdev">

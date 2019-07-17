@@ -26,7 +26,7 @@ const Header = ({ scrollCallback, rwd_header_status }) => {
           <li onClick={() => scrollCallback("nativeDev")}>
             <span>原生開發？</span>
           </li>
-          <li>
+          <li onClick={() => scrollCallback("contactUs")}>
             <span>聯絡我們</span>
           </li>
         </ul>
