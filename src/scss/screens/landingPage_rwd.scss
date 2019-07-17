@@ -9,8 +9,14 @@
       .app_screenshoot {
         margin-top: -240px;
         z-index: 100;
-        img {
-          width: 90vw;
+        .app_screenshoot_bg {
+          img {
+            width: 90vw;
+          }
+        }
+        .app_screenshoot_map {
+          width: 75vw;
+          left: 7.5vw;
         }
       }
       .banner_right {

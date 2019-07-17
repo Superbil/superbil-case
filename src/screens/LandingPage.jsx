@@ -6,10 +6,11 @@ import "../style/screens/landingPage_rwd.css";
 import Header from "../components/header/Header.jsx";
 
 // imgs
-import app from "../images/landingPage/App.png";
-import enginner from "../images/landingPage/enginner.png";
-import customerService from "../images/landingPage/customerService.png";
-import superbilHead from "../images/landingPage/superbilHead.png";
+import app_bg from "../images/landingPage/app_bg.svg";
+import app_map from "../images/landingPage/app_map.svg";
+import enginner from "../images/landingPage/enginner.svg";
+import customerService from "../images/landingPage/customerService.svg";
+import superbilHead from "../images/landingPage/superbilHead.svg";
 import font_slogan from "../images/font/font_slogan.svg";
 import font_ios from "../images/font/font_iOS.svg";
 import font_dev from "../images/font/font_Dev.svg";
@@ -61,7 +62,12 @@ export default class LandingPage extends Component {
 
         <div className="banner">
           <div className="app_screenshoot">
-            <img src={app} alt="app_screenshoot" />
+            <div className="app_screenshoot_bg">
+              <img src={app_bg} alt="app_screenshoot_bg" />
+            </div>
+            <div className="app_screenshoot_map">
+              <img src={app_map} alt="app_screenshoot_map" />
+            </div>
           </div>
 
           <div className="banner_right">

@@ -8,8 +8,40 @@
     padding-top: 170px;
     margin-top: -100px;
     .app_screenshoot {
-      img {
-        width: 30vw;
+      position: relative;
+      .app_screenshoot_bg {
+        img {
+          width: 30vw;
+        }
+      }
+      .app_screenshoot_map {
+        width: 25vw;
+        height: 50%;
+        position: absolute;
+        top: 8.5vh;
+        left: 2.5vw;
+        padding: 1vw 0;
+        overflow: hidden;
+        img {
+          height: 100%;
+          animation: bubble 5s cubic-bezier(0.3, 0.6, 0.3, 1.1) infinite
+            forwards;
+        }
+      }
+
+      @keyframes bubble {
+        10% {
+          margin-left: 10px;
+        }
+        25% {
+          margin-left: -40%;
+        }
+        50% {
+          margin-left: -75%;
+        }
+        100% {
+          margin-left: 0;
+        }
       }
     }
     .banner_right {

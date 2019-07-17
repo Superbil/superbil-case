@@ -8,8 +8,11 @@
     #landingPage .banner .app_screenshoot {
       margin-top: -240px;
       z-index: 100; }
-      #landingPage .banner .app_screenshoot img {
+      #landingPage .banner .app_screenshoot .app_screenshoot_bg img {
         width: 90vw; }
+      #landingPage .banner .app_screenshoot .app_screenshoot_map {
+        width: 75vw;
+        left: 7.5vw; }
     #landingPage .banner .banner_right {
       width: 100vw;
       background-color: #0c384c;
