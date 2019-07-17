@@ -48,8 +48,12 @@
             top: auto;
             bottom: 18vw;
             left: 14vw;
-            background-image: url("../../images/landingPage/dataline_mobile.png");
-            background-size: 17.5vw 30vw;
+            .dataline_m_img {
+              display: block;
+            }
+            .dataline_img {
+              display: none;
+            }
           }
           .enginner {
             position: static;

@@ -48,10 +48,11 @@
       height: 16vw;
       position: absolute;
       top: 16.5vw;
-      left: -4vw;
-      background-image: url("../../images/landingPage/dataline_desktop.png");
-      background-size: 100%;
-      background-repeat: no-repeat; }
+      left: -4vw; }
+      #landingPage .banner .banner_right .banner_enginner .dataline img {
+        width: 100%; }
+      #landingPage .banner .banner_right .banner_enginner .dataline .dataline_m_img {
+        display: none; }
     #landingPage .banner .banner_right .banner_enginner .enginner {
       position: absolute;
       top: 2.75vw;

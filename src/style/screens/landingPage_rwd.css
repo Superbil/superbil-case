@@ -38,9 +38,11 @@
           height: 30vw;
           top: auto;
           bottom: 18vw;
-          left: 14vw;
-          background-image: url("../../images/landingPage/dataline_mobile.png");
-          background-size: 17.5vw 30vw; }
+          left: 14vw; }
+          #landingPage .banner .banner_right .banner_enginner .dataline .dataline_m_img {
+            display: block; }
+          #landingPage .banner .banner_right .banner_enginner .dataline .dataline_img {
+            display: none; }
         #landingPage .banner .banner_right .banner_enginner .enginner {
           position: static;
           margin-top: 20px; }
