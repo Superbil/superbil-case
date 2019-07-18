@@ -1,6 +1,6 @@
 @media all and (max-width: 760px) {
   #landingPage .banner {
-    padding: 0 25px;
+    padding: 50px 25px 0 25px;
     margin: -1px 0 0;
     background-image: none;
     flex-direction: column-reverse;
@@ -16,7 +16,7 @@
     #landingPage .banner .banner_right {
       width: 100vw;
       background-color: #0c384c;
-      padding-bottom: 150px; }
+      padding: 100px 0 150px; }
       #landingPage .banner .banner_right .banner_slogan {
         margin: 0;
         padding-top: 10px;

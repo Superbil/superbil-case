@@ -1,9 +1,13 @@
 @media all and (max-width: 760px) {
   #header {
+    width: 100vw;
     background-color: #0c384c;
     flex-direction: column;
     align-items: flex-start;
-    padding: 20px; }
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 0; }
     #header .logo {
       margin: 0; }
       #header .logo img {

@@ -4,6 +4,8 @@ import "../style/screens/landingPage.css";
 import "../style/screens/landingPage_rwd.css";
 //components
 import Header from "../components/header/Header.jsx";
+import IconBlock from "../components/landingPage/IconBlock";
+import GetManualNlock from "../components/landingPage/GetManualNlock";
 
 // imgs
 import app_bg from "../images/landingPage/app_bg.svg";
@@ -22,7 +24,6 @@ export default class LandingPage extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      loaded: false,
       rwd_header_status: false
     };
   }
@@ -87,81 +88,29 @@ export default class LandingPage extends Component {
           </div>
         </div>
 
-        <div className="landingPage_contents_block" name="serviceItems">
-          <div className="contents_title">
-            <h3>{landingPage_contents_data.serviceItem.title}</h3>
-            <h4>{landingPage_contents_data.serviceItem.info}</h4>
-          </div>
-          <div className="contents">
-            {landingPage_contents_data.serviceItem.contents.map(
-              (content, i) => {
-                return (
-                  <div className="content" key={i}>
-                    <img src={content.img} alt={content.content_title} />
-                    <h4>{content.content_title}</h4>
-                    <p>{content.content_info} </p>
-                  </div>
-                );
-              }
-            )}
-          </div>
+        <div name="serviceItems">
+          <IconBlock contentsData={landingPage_contents_data.serviceItem} />
         </div>
 
-        <div className="getManual_block getManual_first">
-          <div className="getManual_info">
-            <h4>App 內可以收費嗎？Apple 平台會怎麼拆分？上架有什麼好處？</h4>
-            <p>
-              App 除了購買，您也可以在 App 內收費，Apple 使用條款說明，您在 App
-              內收費仍需要扣除固定的手續費。 想要知道更多詳情，請留下您的
-              Email，我們會將建議手冊寄送給您！
-            </p>
-            <div className="getManual_email">
-              <input type="text" placeholder="您的 Email" />
-              <input type="button" value="領取建議手冊" />
-            </div>
-          </div>
-          <div className="getManual_bg_first" />
+        <GetManualNlock
+          getManualInfo={[
+            "App 內可以收費嗎？Apple 平台會怎麼拆分？上架有什麼好處？",
+            "App 除了購買，您也可以在 App 內收費，Apple 使用條款說明，您在 App 內收費仍需要扣除固定的手續費。 想要知道更多詳情，請留下您的 Email ，我們會將建議手冊寄送給您！"
+          ]}
+          sort={"first"}
+        />
+
+        <div name="coopProcess">
+          <IconBlock contentsData={landingPage_contents_data.copProcess} />
         </div>
 
-        <div className="landingPage_contents_block" name="coopProcess">
-          <div className="contents_title">
-            <h3>{landingPage_contents_data.copProcess.title}</h3>
-            <h4>{landingPage_contents_data.copProcess.info}</h4>
-          </div>
-          <div className="contents">
-            {landingPage_contents_data.copProcess.contents.map((content, i) => {
-              return (
-                <div className="content" key={i}>
-                  <img src={content.img} alt={content.content_title} />
-                  <h4>{content.content_title}</h4>
-                  <p>{content.content_info} </p>
-                </div>
-              );
-            })}
-          </div>
-        </div>
-
-        <div className="getManual_block getManual_sec">
-          <div className="getManual_info">
-            <h4>在 App 開發中，您要如何和開發人員合作？如何評估專案時程？</h4>
-            <p>
-              您可以將 Apple store
-              當成上游廠商，提供原物料，但您仍需要專業職人工程師，協助您搭建
-              App。
-              <br />
-              來領去建議手冊吧！您會更清楚要如何準備開發 App
-              資料，幫助您和團對溝通。
-            </p>
-            <div className="getManual_email">
-              <input type="text" placeholder="您的 Email" />
-              <input type="button" value="領取建議手冊" />
-            </div>
-          </div>
-          <div className="getManual_bg_sec">
-            <div className="chart_circle_b" />
-            <div className="chart_circle" />
-          </div>
-        </div>
+        <GetManualNlock
+          getManualInfo={[
+            "在 App 開發中，您要如何和開發人員合作？如何評估專案時程？",
+            "您可以將 Apple store 當成上游廠商，提供原物料，但您仍需要專業職人工程師，協助您搭建 App。<br />來領去建議手冊吧！您會更清楚要如何準備開發 App 資料，幫助您和團對溝通。"
+          ]}
+          sort={"sec"}
+        />
 
         <div className="qa" name="nativeDev">
           <div className="qa_info">
