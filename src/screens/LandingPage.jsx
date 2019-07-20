@@ -6,9 +6,10 @@ import "../style/screens/landingPage_rwd.css";
 import Header from "../components/header/Header.jsx";
 import IconBlock from "../components/landingPage/IconBlock";
 import GetManualNlock from "../components/landingPage/GetManualNlock";
+import BubbleMorph from "../components/canvas/BubbleMorph";
 
 // imgs
-import app_bg from "../images/landingPage/app_bg.svg";
+import app_bg from "../images/landingPage/app_bg.png";
 import app_map from "../images/landingPage/app_map.svg";
 import enginner from "../images/landingPage/enginner.svg";
 import customerService from "../images/landingPage/customerService.svg";
@@ -83,6 +84,15 @@ export default class LandingPage extends Component {
               <div className="dataline" />
               <div className="enginner">
                 <img src={enginner} alt="superbill" />
+              </div>
+
+              <div className="bubbleMorph">
+                <div className="bubble_fir">
+                  <BubbleMorph nth={"1"} />
+                </div>
+                <div className="bubble_sec">
+                  <BubbleMorph nth={"2"} />
+                </div>
               </div>
             </div>
           </div>
@@ -241,6 +251,15 @@ export default class LandingPage extends Component {
             <div className="person_info_btn">
               <input type="button" value="case@superbil.co" />
               <input type="button" value="領取建議手冊" />
+            </div>
+          </div>
+
+          <div className="bubbleMorph">
+            <div className="bubble_fir">
+              <BubbleMorph nth={"1"} />
+            </div>
+            <div className="bubble_sec">
+              <BubbleMorph nth={"2"} />
             </div>
           </div>
         </div>

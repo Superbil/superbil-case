@@ -57,6 +57,21 @@
               width: 55vw;
             }
           }
+
+          .bubbleMorph {
+            width: 100vw;
+            height: 70vh;
+            position: absolute;
+            overflow: hidden;
+            .bubble_fir {
+              display: none;
+            }
+            .bubble_sec {
+              transform: scale(3.5) rotate(10deg);
+              top: 50vw;
+              left: 35vw;
+            }
+          }
         }
       }
     }
@@ -172,6 +187,9 @@
             margin: 5px 0;
           }
         }
+      }
+      .bubbleMorph {
+        display: none;
       }
     }
   }

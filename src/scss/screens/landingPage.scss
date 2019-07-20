@@ -9,6 +9,7 @@
     margin-top: -100px;
     .app_screenshoot {
       position: relative;
+      z-index: 900;
       .app_screenshoot_bg {
         img {
           width: 30vw;
@@ -24,12 +25,12 @@
         overflow: hidden;
         img {
           height: 100%;
-          animation: bubble 5s cubic-bezier(0.3, 0.6, 0.3, 1.1) infinite
+          animation: appScroll 5s cubic-bezier(0.3, 0.6, 0.3, 1.1) infinite
             forwards;
         }
       }
 
-      @keyframes bubble {
+      @keyframes appScroll {
         10% {
           margin-left: 10px;
         }
@@ -65,6 +66,7 @@
           width: 22vw;
           height: 16vw;
           position: absolute;
+          z-index: 1000;
           top: 16.5vw;
           left: -4vw;
           background-image: url("../../images/landingPage/dataline_desktop.png");
@@ -73,10 +75,25 @@
         }
         .enginner {
           position: absolute;
+          z-index: 1000;
           top: 2.75vw;
           left: 15vw;
           img {
             width: 17.7vw;
+          }
+        }
+        .bubbleMorph {
+          .bubble_fir {
+            position: absolute;
+            top: 2.75vw;
+            left: -2vw;
+            transform: rotate(110deg);
+          }
+          .bubble_sec {
+            position: absolute;
+            top: 5vw;
+            left: 15vw;
+            transform: rotate(20deg);
           }
         }
       }
@@ -304,6 +321,8 @@
       display: flex;
       align-items: center;
       padding: 25px 35px;
+      position: relative;
+      z-index: 1000;
       img {
         width: 250px;
       }
@@ -326,12 +345,12 @@
 
   .person_block {
     width: 100vw;
-    // height: 400px;
     background-image: linear-gradient(to left, #245c7b, #11455c);
     display: flex;
     justify-content: center;
     padding: 130px 0 80px;
     margin-top: -70px;
+    position: relative;
     img {
       width: 110px;
       height: 110px;
@@ -378,6 +397,22 @@
             }
           }
         }
+      }
+    }
+
+    .bubbleMorph {
+      .bubble_fir {
+        position: absolute;
+        z-index: -100;
+        top: -180px;
+        left: -50px;
+      }
+      .bubble_sec {
+        position: absolute;
+        z-index: -100;
+        top: -370px;
+        left: 35vw;
+        transform: rotate(100deg);
       }
     }
   }

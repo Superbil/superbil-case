@@ -45,6 +45,17 @@
           margin-top: 20px; }
           #landingPage .banner .banner_right .banner_enginner .enginner img {
             width: 55vw; }
+        #landingPage .banner .banner_right .banner_enginner .bubbleMorph {
+          width: 100vw;
+          height: 70vh;
+          position: absolute;
+          overflow: hidden; }
+          #landingPage .banner .banner_right .banner_enginner .bubbleMorph .bubble_fir {
+            display: none; }
+          #landingPage .banner .banner_right .banner_enginner .bubbleMorph .bubble_sec {
+            transform: scale(3.5) rotate(10deg);
+            top: 50vw;
+            left: 35vw; }
   #landingPage .landingPage_contents_block {
     padding: 70px 30px; }
     #landingPage .landingPage_contents_block .contents_title h4 {
@@ -119,4 +130,6 @@
           width: 50vw;
           font-size: 14px;
           padding: 15px 0;
-          margin: 5px 0; } }
+          margin: 5px 0; }
+    #landingPage .person_block .bubbleMorph {
+      display: none; } }
