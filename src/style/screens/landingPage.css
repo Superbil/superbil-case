@@ -39,7 +39,7 @@
     #landingPage .banner .banner_right .banner_slogan h2 {
       max-width: 41.5vw;
       color: #fff;
-      font-size: 1.9vw;
+      font-size: 1.6vw;
       font-weight: normal;
       margin-top: 36px; }
   #landingPage .banner .banner_right .banner_enginner {
@@ -290,7 +290,7 @@
     flex-direction: column;
     margin-left: 30px; }
     #landingPage .person_block .person_info p {
-      font-size: 24px;
+      font-size: 1.6vw;
       color: #ffffff;
       margin: 15px 0; }
     #landingPage .person_block .person_info .person_info_iosdev img {

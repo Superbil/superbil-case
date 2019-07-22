@@ -10,7 +10,7 @@ import BubbleMorph from "../components/canvas/BubbleMorph";
 
 // imgs
 import app_bg from "../images/landingPage/app_bg.png";
-import app_map from "../images/landingPage/app_map.svg";
+import app_map from "../images/landingPage/app_map.png";
 import enginner from "../images/landingPage/enginner.svg";
 import customerService from "../images/landingPage/customerService.svg";
 import superbilHead from "../images/landingPage/superbilHead.svg";
