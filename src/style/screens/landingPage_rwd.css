@@ -7,7 +7,7 @@
     align-items: center; }
     #landingPage .banner .app_screenshoot {
       margin-top: -240px;
-      z-index: 100; }
+      z-index: 3000; }
       #landingPage .banner .app_screenshoot .app_screenshoot_bg img {
         width: 90vw; }
       #landingPage .banner .app_screenshoot .app_screenshoot_map {
