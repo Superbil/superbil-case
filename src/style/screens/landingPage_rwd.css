@@ -121,7 +121,10 @@
       align-items: center;
       margin: 0; }
       #landingPage .person_block .person_info p {
-        font-size: 14px; }
+        font-size: 14px;
+        text-align: justify; }
+      #landingPage .person_block .person_info .person_info_iosdev {
+        margin-top: 10px; }
       #landingPage .person_block .person_info .person_info_btn {
         display: flex;
         flex-direction: column;
