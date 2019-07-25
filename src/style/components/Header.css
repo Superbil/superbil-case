@@ -29,7 +29,8 @@
       #header .menu ul li:hover span,
       #header_ham .menu ul li:hover span {
         padding: 5px 0;
-        border-bottom: 1px solid #fff; }
+        border-bottom: 1px solid #fff;
+        cursor: pointer; }
       #header .menu ul li:last-child span,
       #header_ham .menu ul li:last-child span {
         border: 1px solid #ffffff;
