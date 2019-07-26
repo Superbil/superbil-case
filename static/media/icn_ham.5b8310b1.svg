@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="448px" height="392px" viewBox="0 0 448 392" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>icn_ham</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icn_ham" fill="#FFFFFF" fill-rule="nonzero">
+            <path d="M16,72 L432,72 C440.837,72 448,64.837 448,56 L448,16 C448,7.163 440.837,0 432,0 L16,0 C7.163,0 0,7.163 0,16 L0,56 C0,64.837 7.163,72 16,72 Z M16,232 L432,232 C440.837,232 448,224.837 448,216 L448,176 C448,167.163 440.837,160 432,160 L16,160 C7.163,160 0,167.163 0,176 L0,216 C0,224.837 7.163,232 16,232 Z M16,392 L432,392 C440.837,392 448,384.837 448,376 L448,336 C448,327.163 440.837,320 432,320 L16,320 C7.163,320 0,327.163 0,336 L0,376 C0,384.837 7.163,392 16,392 Z" id="Shape"></path>
+        </g>
+    </g>
+</svg>
