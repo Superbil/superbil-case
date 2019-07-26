@@ -1,12 +1,12 @@
 import React, { Component } from "react";
 import { scroller } from "react-scroll";
 import "../style/screens/landingPage.css";
-import "../style/screens/landingPage_rwd.css";
+
 //components
 import Header from "../components/header/Header.jsx";
 import IconBlock from "../components/landingPage/IconBlock";
-import GetManualNlock from "../components/landingPage/GetManualNlock";
-import BubbleMorph from "../components/canvas/BubbleMorph";
+import GetManualBlock from "../components/landingPage/GetManualBlock";
+import BubbleMorph from "../components/effect/BubbleMorph";
 
 // imgs
 import app_bg from "../images/landingPage/app_bg.png";
@@ -14,7 +14,6 @@ import app_map from "../images/landingPage/app_map.png";
 import enginner from "../images/landingPage/enginner.svg";
 import customerService from "../images/landingPage/customerService.svg";
 import superbilHead from "../images/landingPage/superbilHead.svg";
-import font_slogan from "../images/font/font_slogan.svg";
 import font_ios from "../images/font/font_iOS.svg";
 import font_dev from "../images/font/font_Dev.svg";
 
@@ -73,7 +72,7 @@ export default class LandingPage extends Component {
 
           <div className="banner_right">
             <div className="banner_slogan">
-              <img src={font_slogan} alt="專業職人工程師" />
+              <h1>專業職人工程師</h1>
               <h2>
                 超過 8 年的 ios 開發經驗，瞭解 ios 發展歷史，
                 能針對您的需求，做適切的開發。
@@ -102,7 +101,7 @@ export default class LandingPage extends Component {
           <IconBlock contentsData={landingPage_contents_data.serviceItem} />
         </div>
 
-        <GetManualNlock
+        <GetManualBlock
           getManualInfo={[
             "App 內可以收費嗎？Apple 平台會怎麼拆分？上架有什麼好處？",
             "App 除了購買，您也可以在 App 內收費，Apple 使用條款說明，您在 App 內收費仍需要扣除固定的手續費。 想要知道更多詳情，請留下您的 Email ，我們會將建議手冊寄送給您！"
@@ -114,7 +113,7 @@ export default class LandingPage extends Component {
           <IconBlock contentsData={landingPage_contents_data.copProcess} />
         </div>
 
-        <GetManualNlock
+        <GetManualBlock
           getManualInfo={[
             "在 App 開發中，您要如何和開發人員合作？如何評估專案時程？",
             "您可以將 Apple store 當成上游廠商，提供原物料，但您仍需要專業職人工程師，協助您搭建 App。<br />來領去建議手冊吧！您會更清楚要如何準備開發 App 資料，幫助您和團對溝通。"

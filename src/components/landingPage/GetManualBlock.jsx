@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function GetManualNlock(props) {
+export default function GetManualBlock(props) {
   const { getManualInfo, sort } = props;
   return (
     <div className={`getManual_block getManual_${sort}`}>

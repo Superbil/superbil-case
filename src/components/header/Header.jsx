@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "../../style/components/Header.css";
-import "../../style/components/Header_rwd.css";
 
+//imgs
 import logo from "../../images/logo/Logo.png";
 import icn_ham from "../../images/icon/icn_ham.svg";
 

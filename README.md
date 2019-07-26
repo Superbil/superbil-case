@@ -1,8 +1,8 @@
 This project is using React framwork and deploy on github page.
 
-github position /
+[github position](https://github.com/Superbil/superbil-case)
 
-webSite postion /
+[webSite postion](case.superbil.co)
 
 ## branch
 

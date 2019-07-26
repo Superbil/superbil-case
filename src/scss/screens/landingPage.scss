@@ -1,3 +1,8 @@
+@font-face {
+  font-family: superFont;
+  src: url("../../images/font/superFont.ttf");
+}
+
 #landingPage {
   .banner {
     background-image: url("../../images//landingPage//bg.png");
@@ -48,8 +53,13 @@
     .banner_right {
       .banner_slogan {
         margin-left: 7.8vw;
-        img {
-          width: 30vw;
+        h1 {
+          height: auto;
+          color: #fff;
+          font-size: 5.6vw;
+          font-weight: normal;
+          font-family: superFont;
+          letter-spacing: 0.02em;
         }
         h2 {
           max-width: 41.5vw;
@@ -417,3 +427,5 @@
     }
   }
 }
+
+@import "./landingPage_rwd.scss";

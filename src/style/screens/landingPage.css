@@ -1,3 +1,7 @@
+@font-face {
+  font-family: superFont;
+  src: url("../../images/font/superFont.ttf"); }
+
 #landingPage .banner {
   background-image: url("../../images//landingPage//bg.png");
   background-size: 100vw;
@@ -34,8 +38,13 @@
     margin-left: 0; } }
   #landingPage .banner .banner_right .banner_slogan {
     margin-left: 7.8vw; }
-    #landingPage .banner .banner_right .banner_slogan img {
-      width: 30vw; }
+    #landingPage .banner .banner_right .banner_slogan h1 {
+      height: auto;
+      color: #fff;
+      font-size: 5.6vw;
+      font-weight: normal;
+      font-family: superFont;
+      letter-spacing: 0.02em; }
     #landingPage .banner .banner_right .banner_slogan h2 {
       max-width: 41.5vw;
       color: #fff;
@@ -323,3 +332,142 @@
     top: -370px;
     left: 35vw;
     transform: rotate(100deg); }
+
+@media all and (max-width: 760px) {
+  #landingPage .banner {
+    padding: 50px 25px 0 25px;
+    margin: -1px 0 0;
+    background-image: none;
+    flex-direction: column-reverse;
+    align-items: center; }
+    #landingPage .banner .app_screenshoot {
+      margin-top: -240px;
+      z-index: 3000; }
+      #landingPage .banner .app_screenshoot .app_screenshoot_bg img {
+        width: 90vw; }
+      #landingPage .banner .app_screenshoot .app_screenshoot_map {
+        width: 75vw;
+        left: 7.5vw; }
+    #landingPage .banner .banner_right {
+      width: 100vw;
+      background-color: #0c384c;
+      padding: 100px 0 150px; }
+      #landingPage .banner .banner_right .banner_slogan {
+        margin: 0;
+        padding-top: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center; }
+        #landingPage .banner .banner_right .banner_slogan h2 {
+          max-width: 72vw;
+          text-align: justify;
+          font-size: 16px;
+          font-weight: normal; }
+        #landingPage .banner .banner_right .banner_slogan img {
+          width: 240px; }
+      #landingPage .banner .banner_right .banner_enginner {
+        display: flex;
+        justify-content: center; }
+        #landingPage .banner .banner_right .banner_enginner .dataline {
+          width: 17.5vw;
+          height: 30vw;
+          top: auto;
+          bottom: 18vw;
+          left: 14vw;
+          background-image: url("../../images/landingPage/dataline_mobile.png"); }
+        #landingPage .banner .banner_right .banner_enginner .enginner {
+          position: static;
+          margin-top: 20px; }
+          #landingPage .banner .banner_right .banner_enginner .enginner img {
+            width: 55vw; }
+        #landingPage .banner .banner_right .banner_enginner .bubbleMorph {
+          width: 100vw;
+          height: 70vh;
+          position: absolute;
+          overflow: hidden; }
+          #landingPage .banner .banner_right .banner_enginner .bubbleMorph .bubble_fir {
+            display: none; }
+          #landingPage .banner .banner_right .banner_enginner .bubbleMorph .bubble_sec {
+            transform: scale(3.5) rotate(10deg);
+            top: 50vw;
+            left: 35vw; }
+  #landingPage .landingPage_contents_block {
+    padding: 70px 30px; }
+    #landingPage .landingPage_contents_block .contents_title h4 {
+      text-align: justify;
+      margin-bottom: 4px; }
+    #landingPage .landingPage_contents_block .contents .content img {
+      height: 100px; }
+    #landingPage .landingPage_contents_block .contents .content p {
+      width: 50vw; }
+  #landingPage .getManual_block {
+    height: auto;
+    background-image: linear-gradient(to left, #245c7b, #11455c); }
+    #landingPage .getManual_block .getManual_info {
+      width: 85vw;
+      margin: 0;
+      padding: 40px 7vw 100px; }
+      #landingPage .getManual_block .getManual_info p {
+        text-align: justify; }
+      #landingPage .getManual_block .getManual_info .getManual_email {
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center; }
+        #landingPage .getManual_block .getManual_info .getManual_email input[type="text"] {
+          width: 90%;
+          padding: 0 5px; }
+        #landingPage .getManual_block .getManual_info .getManual_email input[type="button"] {
+          position: static;
+          margin-top: 30px; }
+    #landingPage .getManual_block .getManual_bg_first,
+    #landingPage .getManual_block .getManual_bg_sec {
+      display: none; }
+  #landingPage .qa {
+    padding-top: 70px; }
+    #landingPage .qa .qa_info {
+      width: 81vw; }
+      #landingPage .qa .qa_info p {
+        text-align: justify; }
+        #landingPage .qa .qa_info p br {
+          display: none; }
+    #landingPage .qa .qa_table {
+      display: none; }
+    #landingPage .qa .qa_table_rwd table {
+      width: 80vw;
+      margin-top: 25px; }
+    #landingPage .qa .qa_evaluation {
+      width: 80vw;
+      height: auto;
+      flex-direction: column;
+      padding: 25px; }
+      #landingPage .qa .qa_evaluation img {
+        width: 220px; }
+      #landingPage .qa .qa_evaluation .qa_evaluation_info {
+        width: 78vw;
+        margin: 25px 0; }
+        #landingPage .qa .qa_evaluation .qa_evaluation_info p {
+          text-align: justify; }
+  #landingPage .person_block {
+    flex-direction: column;
+    align-items: center; }
+    #landingPage .person_block .person_info {
+      width: 70vw;
+      align-items: center;
+      margin: 0; }
+      #landingPage .person_block .person_info p {
+        font-size: 14px;
+        text-align: justify; }
+      #landingPage .person_block .person_info .person_info_iosdev {
+        margin-top: 10px; }
+      #landingPage .person_block .person_info .person_info_btn {
+        display: flex;
+        flex-direction: column;
+        align-items: center; }
+        #landingPage .person_block .person_info .person_info_btn input[type="button"] {
+          width: 50vw;
+          font-size: 14px;
+          padding: 15px 0;
+          margin: 5px 0; }
+    #landingPage .person_block .bubbleMorph {
+      display: none; } }
