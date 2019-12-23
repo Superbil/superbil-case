@@ -122,7 +122,7 @@ export default class LandingPage extends Component {
             當成上游廠商，提供原物料，但您仍需要專業職人工程師，協助您搭建 App。
           </p>
           <p>
-            來領去建議手冊吧！您會更清楚要如何準備開發 App
+            來去領建議手冊吧！您會更清楚要如何準備開發 App
             資料，幫助您和團對溝通。
           </p>
         </GetManualBlock>
