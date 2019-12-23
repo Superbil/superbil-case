@@ -11,13 +11,13 @@
   },
   "scripts": {
     "build-css": "node-sass-chokidar src/scss -o src/style",
-    "watch-css": "npm run build-css && node-sass-chokidar src/scss -o src/style --watch --recursive",
+    "watch-css": "yarn run build-css && node-sass-chokidar src/scss -o src/style --watch --recursive",
     "start-js": "react-scripts start",
     "start": "npm-run-all -p watch-css start-js",
-    "build": "npm run build-css && react-scripts build",
+    "build": "yarn run build-css && react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "predeploy": "npm run build",
+    "predeploy": "yarn build && cp CNAME build/",
     "deploy": "gh-pages -b master -d build -r git@github.com:Superbil/superbil-case.git -m 'Deploy Pages'"
   },
   "eslintConfig": {
