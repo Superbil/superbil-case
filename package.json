@@ -2,7 +2,7 @@
   "name": "superbil.co",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://superbilBlog.hidana.me",
+  "homepage": "https://case.superbil.co",
   "dependencies": {
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
@@ -18,7 +18,7 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -b master -d build"
+    "deploy": "gh-pages -b master -d build -r git@github.com:Superbil/superbil-case.git -m 'Deploy Pages'"
   },
   "eslintConfig": {
     "extends": "react-app"
