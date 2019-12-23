@@ -7,6 +7,7 @@ import Header from "../components/header/Header.jsx";
 import IconBlock from "../components/landingPage/IconBlock";
 import GetManualBlock from "../components/landingPage/GetManualBlock";
 import BubbleMorph from "../components/effect/BubbleMorph";
+import QATable from "../components/qaTable/QATable";
 
 // imgs
 import app_bg from "../images/landingPage/app_bg.png";
@@ -101,25 +102,30 @@ export default class LandingPage extends Component {
           <IconBlock contentsData={landingPage_contents_data.serviceItem} />
         </div>
 
-        <GetManualBlock
-          getManualInfo={[
-            "App 內可以收費嗎？Apple 平台會怎麼拆分？上架有什麼好處？",
-            "App 除了購買，您也可以在 App 內收費，Apple 使用條款說明，您在 App 內收費仍需要扣除固定的手續費。 想要知道更多詳情，請留下您的 Email ，我們會將建議手冊寄送給您！"
-          ]}
-          sort={"first"}
-        />
+        <GetManualBlock sort={"first"}>
+          <h4>App 內可以收費嗎？Apple 平台會怎麼拆分？上架有什麼好處？</h4>
+          <p>
+            App 除了購買，您也可以在 App 內收費，Apple 使用條款說明，您在 App
+            內收費仍需要扣除固定的手續費。 想要知道更多詳情，請留下您的 Email
+            ，我們會將建議手冊寄送給您！
+          </p>
+        </GetManualBlock>
 
         <div name="coopProcess">
           <IconBlock contentsData={landingPage_contents_data.copProcess} />
         </div>
 
-        <GetManualBlock
-          getManualInfo={[
-            "在 App 開發中，您要如何和開發人員合作？如何評估專案時程？",
-            "您可以將 Apple store 當成上游廠商，提供原物料，但您仍需要專業職人工程師，協助您搭建 App。<br />來領去建議手冊吧！您會更清楚要如何準備開發 App 資料，幫助您和團對溝通。"
-          ]}
-          sort={"sec"}
-        />
+        <GetManualBlock sort={"sec"}>
+          <h4>在 App 開發中，您要如何和開發人員合作？如何評估專案時程？</h4>
+          <p>
+            您可以將 Apple store
+            當成上游廠商，提供原物料，但您仍需要專業職人工程師，協助您搭建 App。
+          </p>
+          <p>
+            來領去建議手冊吧！您會更清楚要如何準備開發 App
+            資料，幫助您和團對溝通。
+          </p>
+        </GetManualBlock>
 
         <div className="qa" name="nativeDev">
           <div className="qa_info">
@@ -131,98 +137,7 @@ export default class LandingPage extends Component {
             </p>
           </div>
 
-          <div className="qa_table">
-            <table>
-              <thead>
-                <tr>
-                  <th>我希望...</th>
-                  <th>混合開發</th>
-                  <th>原生開發</th>
-                </tr>
-              </thead>
-
-              <tbody>
-                <tr>
-                  <td>可以同時上架 iOS & Android 平台</td>
-                  <td>✓</td>
-                  <td />
-                </tr>
-                <tr>
-                  <td>節省開發成本</td>
-                  <td>✓</td>
-                  <td />
-                </tr>
-                <tr>
-                  <td>快速驗證市場</td>
-                  <td>✓</td>
-                  <td />
-                </tr>
-                <tr>
-                  <td>較精細的 UI 互動，支持大量圖、動畫、手勢</td>
-                  <td />
-                  <td>✓</td>
-                </tr>
-                <tr>
-                  <td>更進階的客製化，最新的 UI 支援</td>
-                  <td />
-                  <td>✓</td>
-                </tr>
-                <tr>
-                  <td>更好的效能，讓操作不卡卡</td>
-                  <td />
-                  <td>✓</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-
-          <div className="qa_table_rwd">
-            <table>
-              <thead>
-                <tr>
-                  <th>混合開發</th>
-                  <th />
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>可以同時上架 iOS & Android 平台</td>
-                  <td>✓</td>
-                </tr>
-                <tr>
-                  <td>節省開發成本</td>
-                  <td>✓</td>
-                </tr>
-                <tr>
-                  <td>快速驗證市場</td>
-                  <td>✓</td>
-                </tr>
-              </tbody>
-            </table>
-
-            <table>
-              <thead>
-                <tr>
-                  <th>原生開發</th>
-                  <th />
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>較精細的 UI 互動，支持大量圖、動畫、手勢</td>
-                  <td>✓</td>
-                </tr>
-                <tr>
-                  <td>更進階的客製化，最新的 UI 支援</td>
-                  <td>✓</td>
-                </tr>
-                <tr>
-                  <td>更好的效能，讓操作不卡卡</td>
-                  <td>✓</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
+          <QATable />
 
           <div className="qa_evaluation">
             <img src={customerService} alt="customerService" />

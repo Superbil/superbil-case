@@ -1,5 +1,5 @@
 import React from "react";
-import "../../style/components/BubbleMorph.css";
+import "../../style/components/effect/BubbleMorph.css";
 
 const BubbleMorph = ({ nth }) => {
   return (

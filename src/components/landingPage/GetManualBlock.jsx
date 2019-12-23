@@ -1,12 +1,10 @@
 import React from "react";
 
-export default function GetManualBlock(props) {
-  const { getManualInfo, sort } = props;
+export default function GetManualBlock({ children, sort }) {
   return (
     <div className={`getManual_block getManual_${sort}`}>
       <div className="getManual_info">
-        <h4>{getManualInfo[0]}</h4>
-        <p>{getManualInfo[1]}</p>
+        {children}
         <div className="getManual_email">
           <input type="text" placeholder="您的 Email" />
           <input type="button" value="領取建議手冊" />

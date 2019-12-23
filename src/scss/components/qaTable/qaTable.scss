@@ -1,0 +1,25 @@
+.qa_table,
+.qa_table_rwd {
+  margin-bottom: 50px;
+  table {
+    width: 665px;
+    border-collapse: collapse;
+    tr {
+      height: 41px;
+      border-bottom: 1px solid #ddd;
+      td {
+        text-align: center;
+      }
+      th,
+      td {
+        &:first-child {
+          text-align: left;
+        }
+      }
+    }
+  }
+}
+.qa_table_rwd {
+  display: none;
+}
+@import "./qaTable_rwd.scss";

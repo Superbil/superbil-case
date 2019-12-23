@@ -94,7 +94,7 @@
         right: 42px;
         background-color: rgba(255, 255, 255, 0.2); }
 
-@media all and (max-width: 760px) {
+@media all and (max-width: 767px) {
   #header {
     width: 100vw;
     background-color: #0c384c;
@@ -112,9 +112,7 @@
       display: none; }
     #header .menu ul li {
       margin: 0 6px;
-      font-size: 3.2vw; }
-      #header .menu ul li:last-child {
-        padding: 8px 10px; }
+      font-size: 12px; }
     #header .chart_circle {
       display: none; }
   #header_ham {

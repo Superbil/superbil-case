@@ -1,4 +1,4 @@
-@media all and (max-width: 760px) {
+@media all and (max-width: 767px) {
   #header {
     width: 100vw;
     background-color: #0c384c;
@@ -21,10 +21,7 @@
       ul {
         li {
           margin: 0 6px;
-          font-size: 3.2vw;
-          &:last-child {
-            padding: 8px 10px;
-          }
+          font-size: 12px;
         }
       }
     }

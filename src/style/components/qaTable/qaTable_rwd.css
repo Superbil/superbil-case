@@ -1,0 +1,10 @@
+@media all and (max-width: 767px) {
+  .qa_table {
+    display: none; }
+  .qa_table_rwd {
+    display: block; }
+    .qa_table_rwd table {
+      width: 80vw;
+      margin-top: 25px; }
+      .qa_table_rwd table td:nth-child(2) {
+        width: 40px; } }
